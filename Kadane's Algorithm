@@ -1,0 +1,32 @@
+//Kadane's Algorithm is very useful for finding largest Sum Contiguous Subarray
+#include<iostream>
+using namespace std;
+int main(){
+int i,t,n,flag=0;
+cin>>n;
+int a[n];
+for(i=0;i<n;i++){
+cin>>a[i];
+}
+if(a[i]>0){
+flag=1;
+}
+int ms=0,cs=0;
+for(i=0;i<n;i++){
+cs+=a[i];
+if(cs<0){
+cs=0;
+}
+if(cs>ms){
+cs=ms;
+}
+if(flag==1){
+cout<<ms<<endl;
+}
+elseif(flag==0){
+sort(a,n-1);
+cout<<a[n-1];
+}
+}
+return 0;
+}
