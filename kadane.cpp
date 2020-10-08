@@ -1,4 +1,6 @@
-//Kadane's algorithm is an optimal solution of O(n) to find the maximum sum of contiguous sub-array. This is very algorithm if you are planning to crack interviews at product based companies
+//Kadane's algorithm is an optimal solution of O(n) to find the maximum sum of contiguous sub-array. 
+//This is very algorithm if you are planning to crack interviews at product based companies
+#include<iostream>
 #include<climits>
 using namespace std;
 
@@ -27,4 +29,4 @@ int main(){
         cout<<max<<endl;
         return 0;
 }
-~  
+
