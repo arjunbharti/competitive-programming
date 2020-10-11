@@ -1,3 +1,5 @@
+//Removing duplicate elements from a sorted array
+
 #include<bits/stdc++.h>
 using namespace std;
 
